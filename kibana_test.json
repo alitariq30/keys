@@ -1,0 +1,4 @@
+{
+  "basePath" : "/kibana",
+  "elasticsearchURL" : "http://elasticsearch-9200:9200"
+}
