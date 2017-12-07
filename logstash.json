@@ -1,0 +1,10 @@
+{
+	"beatsport" : 5044,
+	"syslogPattern" : "its a sys log pattern",
+	"defaultPattern" : "its a default patter",
+	"apps" :{
+			"qbCheck":{
+					"grokPattern" : "pattern"
+				  }
+		}
+}
