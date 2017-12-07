@@ -1,10 +1,10 @@
 {
 	"beatsPort" : 5044,
-	"syslogPattern" : "%{LOGLEVEL:loglevel}\s*\[%{DATA:thread}\]\s*%{DATA:class}\s+%{GREEDYDATA:message}",
-	"defaultPattern" : "%{TIMESTAMP_ISO8601:timestamp}\s*\[%{DATA:thread}\]\s*%{LOGLEVEL:loglevel}\s*%{NOTSPACE:class}\s*\S+\s*%{GREEDYDATA:message}",
+	"syslogPattern" : "%{LOGLEVEL:loglevel}\\s*\\[%{DATA:thread}\\]\\s*%{DATA:class}\\s+%{GREEDYDATA:message}",
+	"defaultPattern" : "%{TIMESTAMP_ISO8601:timestamp}\\s*\\[%{DATA:thread}\\]\\s*%{LOGLEVEL:loglevel}\\s*%{NOTSPACE:class}\\s*\\S+\\s*%{GREEDYDATA:message}",
 	"apps" :{
 			"qbCheck":{
-					"grokPattern" : "%{TIMESTAMP_ISO8601:timestamp}\s*\[%{DATA:app_name}\]\s*\[%{DATA:thread}\]\s*%{LOGLEVEL:loglevel}\s*\(%{DATA:class}\)\s*\S+\s*%{GREEDYDATA:message}"
+					"grokPattern" : "%{TIMESTAMP_ISO8601:timestamp}\\s*\\[%{DATA:app_name}\\]\\s*\\[%{DATA:thread}\\]\\s*%{LOGLEVEL:loglevel}\\s*\\(%{DATA:class}\\)\\s*\\S+\\s*%{GREEDYDATA:message}"
 				  }
 		}
 }
